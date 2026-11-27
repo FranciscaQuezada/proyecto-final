@@ -1,11 +1,7 @@
 
 # Que hace: estima y compara modelos de regresión lineal con broom y dplyr, a partir
-# de la base limpia que deja 01_limpieza.R.
-# Pregunta (continuación del Hito 1): entre estudiantes de enseñanza media del Biobío,
-# ¿cuántos puntos de promedio general (escala 1-7) se asocian con 10 puntos
-# porcentuales más de asistencia, a igual género, edad, dependencia y ruralidad?
-# (AJUSTAR a la pregunta exacta del Hito 1 si es distinta.)
-# Las relaciones son asociaciones, no causales.
+# de la base limpia que deja 01_limpieza.R..
+
 # Entrada: data/processed/rendimiento_biobio_limpio.rds
 # Salidas: output/tablas/t_modelos_rendimiento.csv y .tex
 # Correr desde la RAÍZ del proyecto.
