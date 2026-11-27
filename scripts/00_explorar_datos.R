@@ -1,4 +1,5 @@
 
+# Hito 1
 # Autor: Francisca Quezada
 # Fecha: 2026-11-17
 # Qué hace: abre la base de rendimiento 2024, confirma las variables del Hito,
