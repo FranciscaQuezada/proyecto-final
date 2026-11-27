@@ -1,0 +1,30 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+entry=none,label=none,
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]},
+hline{2}={1-4}{solid, black, 0.05em},
+hline{12}={1-4}{solid, black, 0.05em},
+hline{1}={1-4}{solid, black, 0.08em},
+hline{14}={1-4}{solid, black, 0.08em},
+column{2-4}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& simple & controles & sin\_baja \\
+(Intercept) & \num{4.026}*** & \num{2.986}*** & \num{2.858}*** \\
+& (\num{0.016}) & (\num{0.031}) & (\num{0.034}) \\
+asistencia & \num{0.021}*** & \num{0.022}*** & \num{0.023}*** \\
+& (\num{0.000}) & (\num{0.000}) & (\num{0.000}) \\
+generoMujer &  & \num{0.237}*** & \num{0.236}*** \\
+&  & (\num{0.004}) & (\num{0.004}) \\
+edad &  & \num{0.052}*** & \num{0.052}*** \\
+&  & (\num{0.002}) & (\num{0.002}) \\
+ruralRural &  & \num{-0.057}*** & \num{-0.059}*** \\
+&  & (\num{0.011}) & (\num{0.011}) \\
+Num.Obs. & \num{86582} & \num{86582} & \num{85034} \\
+R2 & \num{0.140} & \num{0.198} & \num{0.160} \\
+\end{talltblr}
+\end{table}
