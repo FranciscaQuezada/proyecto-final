@@ -74,3 +74,23 @@ diferencias en puntos porcentuales y como asociaciones, no como efectos causales
 La pregunta, los controles y las decisiones del análisis son míos. Usé Claude (Anthropic)
 para entender errores de código y la sintaxis de los comandos, y para revisar la redacción 
 y la estructura de los documentos.
+
+
+## Hito 2 - Avance
+
+### Cómo reproducir
+1. Abrir `proyecto-final.Rproj`.
+2. `install.packages(c("dplyr", "broom", "modelsummary"))`
+3. Correr en orden: `scripts/00_explorar_datos.R` → `01_limpieza.R` → `02_modelo.R`.
+
+### Limpieza (`01_limpieza.R`)
+- Promedio = 0 y asistencia = 0 pasan a NA (7.291 casos, estudiantes sin año completo registrado).
+- Los 1.548 con asistencia menor a 50 % se mantienen y se usan en la robustez.
+- Casos completos: se pierde 7,8 %; quedan 86.582 estudiantes.
+- Bitácora en `output/tablas/limpieza_log.csv`; base limpia en `data/processed/`.
+
+### Modelo (`02_modelo.R`)
+Tres regresiones: simple, con controles y sin asistencia < 50 %. Con controles, 10 puntos
+porcentuales más de asistencia se asocian con 0,217 puntos más de promedio (IC 95 %: 0,214 a
+0,220), unas 0,33 desviaciones estándar; R² = 0,198. Es una asociación, no causal.
+Tabla en `output/tablas/t_modelos_rendimiento.csv`.
